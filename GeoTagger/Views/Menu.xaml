@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="GeoTagger.Views.Menu">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="../Styles/styles.css" />
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="Center" StyleClass="MainLayout">
+            <Entry x:Name="FotoText" Placeholder="Texto para la foto" 
+                   StyleClass="MainEntry"  />
+            <Button Text="Taggear Foto" Clicked="CameraButton_Clicked" />
+            <Button Text="Ver Tags" Clicked="ShowTags" />
+
+            <Image x:Name="PhotoImage"></Image>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
